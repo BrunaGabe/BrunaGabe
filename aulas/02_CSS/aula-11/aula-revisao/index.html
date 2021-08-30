@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Revisão do conteúdo de HTML e CSS"> <!--meta tag responsável por dar ao projeto uma descrição, facilitando ferramentas como o google para categorizar a aplicação e sugerir como assunto relacionado-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--meta tage responsável por informar ao navegador que a aplicação é respansiva, podendo assim ser acessada por mobile ou dedsktop, exibindo assim o ícone de verção desktop quando utilizado pela versão mobile-->
+    <title>Revisão</title>
+        <link rel="stylesheet" href="./Positions.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <img class="logo" src="https://tecnostart.com.br/wp-content/uploads/2021/06/Logotipo-TecnoStart.svg"
+                 alt="logo da tecnostart">
+            <nav>
+                <ul>
+                    <li><span class="pg-Inicial">Inicial </span></li>
+                    <li><span class="pg-Sobre">Sobre </span></li>
+                    <li><span class="pg-Cadastro">Cadastro </span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="Position">
+        <h1><a href="https://www.w3schools.com/css/css_positioning.asp">Positions</a></h1>
+        <ol>
+            <li>
+                Static
+                <p>
+                    Posição padrão dos elementos, não possuem propeidades de posicionamento, para posicioná-los somente
+                    com <span>margin</span>
+                </p>
+            </li>
+
+            <li>
+                Relative
+                <p>
+                    Posição relativa à primeira tag <span>static</span>, podendo assim criar um posicionamento relativo
+                    à esta, ou seja, permite o uso de propriedades como <span>top, left, rigth e bottom</span>
+                </p>
+            </li>
+
+            <li>
+                Absolute
+                <p>
+                    Posição absoluta em relação ao primeiro elemento relative, onde as propriedades <span>top, left, rigth e bottom</span>
+                    definem o afastamento efetivo das bordas decritas
+                </p>
+            </li>
+
+            <li>
+                Fixed
+                <p>
+                    Posição fixa em relação à primeira tag <span>static</span>, onde as propriedades <span>top, left, rigth e bottom</span>
+                    definem o afastamento efetivo das bordas decritas independente do <i>scroll</i> do mouse
+                </p>
+            </li>
+        </ol>
+
+        <span>explore o CSS para ter um melhor entendimento de position</span>
+
+        <div class="container-position">
+            <div id="Position-static">
+                1-STATIC
+            </div>
+            <div id="Position-relative">
+                2-RELATIVE
+            </div>
+            <div id="Position-absolute">
+                3-ABSOLUTE
+            </div>
+            <div id="Position-fixed">
+                4-FIXED
+            </div>
+        </div>
+    </section>
+
+    <section id="FlexBox">
+        <h1>FlexBox</h1>
+
+        <div class="container-flexbox">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

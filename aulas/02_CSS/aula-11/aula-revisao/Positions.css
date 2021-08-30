@@ -1,0 +1,59 @@
+
+body{
+    min-height: 120vh;
+}
+#position ol li p span {
+    background-color: #cccccc;
+}
+
+span {
+    color: gray;
+    font-style: italic;
+}
+
+#Position-static {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+
+    position: static;
+    /*margin: 25px 0 0 25px;*/
+}
+
+#Position-relative {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+
+    position: relative;
+    /*left: 150px;*/
+    /*top: -100px;*/
+
+}
+
+#Position-absolute {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+
+    position: absolute;
+    /*left: 150px;*/
+    /*top: 150px;*/
+}
+
+#Position-fixed {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    color: black;
+
+    position: fixed;
+    /*left: 25px;*/
+    /*top: 150px;*/
+}
+
+
+

@@ -1,0 +1,64 @@
+    body {
+        min-height: 100vh;
+        background-color: royalblue;
+    }
+    
+    h1:hover {
+        color: red;
+        transition: .25s;
+        cursor: pointer;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        body {
+            margin-left: 10%;
+        }
+        h1+p {
+            float: left;
+            width: 450px;
+            color: #afbff8;
+        }
+        div {
+            float: left;
+            width: 600px;
+        }
+        div p {
+            text-align: justify;
+        }
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: .25;
+        }
+        .container {
+            width: 80%;
+            background-color: seashell;
+            height: 100%
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        body {
+            margin-left: 150px;
+        }
+        h1+p {
+            float: left;
+            min-width: 200px;
+            width: 40%;
+            color: #afbff8;
+        }
+        div {
+            float: left;
+            width: 40%;
+        }
+        div p {
+            text-align: justify;
+        }
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: .25;
+        }
+    }

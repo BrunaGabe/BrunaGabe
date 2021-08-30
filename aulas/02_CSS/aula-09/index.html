@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p span {
+            font-size: smaller;
+        }
+
+        .spnaClass {
+            color: blue;
+        }
+
+        #span1 {
+            color: red;
+            font-size: larger;
+
+        }
+
+        span {
+            font-size: smaller;
+            ;
+        }
+
+        #Enfase {
+            font-size: 16px;
+            font-weight: 100;
+            font-style: italic;
+            color: yellowgreen;
+            text-transform: uppercase;
+            text-shadow: -1px 3px 1px red;
+        }
+
+        p {
+            text-transform: lowercase;
+            margin: 0;
+        }
+
+        div {
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #Div1 {
+            float: left;
+            width: 300px;
+        }
+
+        #Div2 {
+            float: left;
+            width: 300px;
+        }
+        div {
+            float: right;
+        }
+
+        p ~ span {
+            background-color: darkblue;
+        }
+
+        p > span {
+            background-color: darkgreen;
+        }
+
+        body {
+            background-image: url("./img-de-fundo.jpg");
+            background-repeat: no-repeat;
+            background-size: 300px;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        ul {
+            background: radial-gradient(yellow, red, blue)
+        }
+
+        
+
+    </style>
+</head>
+
+
+<body>
+
+    <ul>
+        <li>
+            <a href=""> meu link</a>
+        </li>
+        <li>linha2</li>
+        <li>linha3</li>
+        <li>linha4</li>
+    </ul>
+    <div id="Div1">
+        <p>
+            <span id="span1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit reprehenderit optio magnam. Fugiat,
+                libero!
+                <strong id="Enfase">Exercitationem</strong>, tempora animi? Quisquam labore assumenda quo facilis sed
+                explicabo a expedita maiores
+                pariatur
+                laborum?
+                Accusamus excepturi facere laborum nemo iste dicta adipisci, et, placeat quos laboriosam doloribus
+                reiciendis
+                accusantium quae obcaecati eaque. Iure ut modi ratione dignissimos quis veritatis sit quos, alias
+                facilis
+                similique?
+            </span>
+            <span class="spnaClass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit reprehenderit optio magnam. Fugiat,
+                libero!
+                Exercitationem, tempora animi? Quisquam labore assumenda quo facilis sed explicabo a expedita maiores
+                pariatur
+                laborum?
+                Accusamus excepturi facere laborum nemo iste dicta adipisci, et, placeat quos laboriosam doloribus
+                reiciendis
+                accusantium quae obcaecati eaque. Iure ut modi ratione dignissimos quis veritatis sit quos, alias
+                facilis
+                similique?
+            </span>
+        </p>
+    </div>
+    <div id="Div2">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit reprehenderit optio magnam. Fugiat,
+            libero!
+            Exercitationem, tempora animi? Quisquam labore assumenda quo facilis sed explicabo a expedita maiores
+            pariatur
+            laborum?
+            Accusamus excepturi facere laborum nemo iste dicta adipisci, et, placeat quos laboriosam doloribus
+            reiciendis
+            accusantium quae obcaecati eaque. Iure ut modi ratione dignissimos quis veritatis sit quos, alias
+            facilis
+            similique?
+        </span>
+        <span class="spnaClass">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit reprehenderit optio magnam. Fugiat,
+            libero!
+            Exercitationem, tempora animi? Quisquam labore assumenda quo facilis sed explicabo a expedita maiores
+            pariatur
+            laborum?
+            Accusamus excepturi facere laborum nemo iste dicta adipisci, et, placeat quos laboriosam doloribus
+            reiciendis
+            accusantium quae obcaecati eaque. Iure ut modi ratione dignissimos quis veritatis sit quos, alias
+            facilis
+            similique?
+        </span>
+    </div>
+    <div>
+        <a>palavra qualquer</a>
+        <a>palavra qualquer</a>
+        <a>palavra qualquer</a>
+        <a>palavra qualquer</a>
+    </div>
+</body>
+
+</html>

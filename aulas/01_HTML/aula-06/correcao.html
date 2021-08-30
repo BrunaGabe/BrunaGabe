@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <form method="POST">
+        <fieldset>
+            <legend>Dados Pessoas</legend>
+            <label>Nome: <input type="text" name="nmAluno" required></label>
+            <label>Sobrenome: <input type="text" name="lastName" required></label>
+            <label>Data de Nascimento: <input type="date" name="dtNascimento" required></label>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <label><input type="radio" name="sexo" id="radio-1" value="M" checked> Masculino</label>
+                <label><input type="radio" name="sexo" id="radio-2" value="F"> Feminino</label>
+                <label><input type="radio" name="sexo" id="radio-3" value="L"> LGBT</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Contato</legend>
+            <label>Telefone: <input type="tel" name="nuTelefone" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <label>
+                Escolaridade:
+                <select name="dsEscolaridade" required>
+                    <option value="" selected disabled>Selecione a Escolaridade</option>
+                    <option value="0">Analfabeto</option>
+                    <option value="1">Fundamental Incompleto</option>
+                    <option value="2">Fundamental Completo</option>
+                    <option value="3">Ensino Médio Incompleto</option>
+                    <option value="4">Ensino Médio Completo</option>
+                    <option value="5">Ensino Técnico Incompleto</option>
+                    <option value="6">Ensino Técnico Completo</option>
+                    <option value="7">Ensino Superior Incompleto</option>
+                    <option value="8">Ensino Superior Completo</option>
+                </select>
+            </label>
+        </fieldset>
+        <input type="submit" value="Cadastrar aluno">
+    </form>
+</body>
+
+</html>

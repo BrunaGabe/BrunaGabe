@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-12</title>
+
+    <style>
+        body {
+            background-color: #6dc0b9;
+        }
+
+        p {
+            color: red;
+            font-size: 21px;
+        }
+        #meuId {
+            color: red;
+            font-size: 21px;
+            background-color: green;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo aleatorio</h1>
+    <div id="meuId" onmouseenter="entrou()" onmouseout="saiu()">Texto interatico</div>
+    <p>outro texto qualquer</p>
+
+    <script>
+        var a = window.document.getElementById("meuId");
+        a.addEventListener('click', clicou)
+        function entrou(){
+            a.style.backgroundColor = "blue"
+        }
+        function saiu() {
+            a.style.backgroundColor = "green"
+        }
+        function clicou() {
+            a.innerText = "Fui clicado"
+        }
+
+    </script>
+</body>
+
+</html>

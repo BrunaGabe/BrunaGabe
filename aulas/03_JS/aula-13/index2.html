@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-12</title>
+
+    <style>
+        body {
+            background-color: #6dc0b9;
+        }
+
+        p {
+            font-size: 21px;
+        }
+
+        #meuId {
+            color: red;
+            font-size: 21px;
+            background-color: green;
+            height: 100px;
+        }
+
+        .quebraDeLinha {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo aleatorio</h1>
+    <div>
+        <label>
+            label1
+            <input type="number" name="radar"></input>
+        </label>
+        <label>
+            label2
+            <input type="number" name="radar"></input>
+        </label>
+        <label>
+            label3
+            <input type="number" name="radar"></input>
+        </label>
+        <label>
+            label4
+            <input type="number" name="radar"></input>
+        </label>
+    </div>
+
+    <button id="Enviar" onclick="notificar()">enviar</button>
+    <span id="SomaDosInputs"></span>
+
+    <script>
+        var botaoRadar = window.document.getElementById('Enviar')
+
+        function notificar() {
+
+            var spanSomaDosInputs = window.document.querySelector('#SomaDosInputs')
+            
+            var inputs = window.document.querySelectorAll('div label input')
+            var somaDosInputs = 0
+
+            for (var indice = 0; indice < inputs.length; indice++) {
+                var input = inputs[indice].value
+                somaDosInputs += Number(input)
+                console.log(`pasei aqui com o input ${input} e indice ${indice}`)
+            }
+
+            spanSomaDosInputs.innerHTML += somaDosInputs;
+            console.log(spanSomaDosInputs)
+
+
+        }
+    </script>
+</body>
+
+</html>

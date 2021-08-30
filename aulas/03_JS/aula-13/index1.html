@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-12</title>
+
+    <style>
+        body {
+            background-color: #6dc0b9;
+        }
+
+        p {
+            font-size: 21px;
+        }
+
+        #meuId {
+            color: red;
+            font-size: 21px;
+            background-color: green;
+            height: 100px;
+        }
+
+        .quebraDeLinha {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo aleatorio</h1>
+    <label>
+        Qual a velocidade do carro
+        <input type="number" name="radar" id="Radar"></input>
+    </label>
+    <button id="Enviar" onclick="notificar()">enviar</button>
+    <label class="quebraDeLinha">
+        <span id="VelocidadeMaxima"></span>
+        <span id="VelocidadeAtual"></span>
+        <span id="Multa"></span>
+    </label>
+
+    <script>
+        var botaoRadar = window.document.getElementById('Enviar')
+
+
+        // botaoRadar.addEventListener('click', notificar)
+
+        function notificar() {
+            console.log("entrei")
+
+            var velocidadeAtual = window.document.getElementById('VelocidadeAtual')
+            var multa = window.document.getElementById('Multa')
+            var velocidadeMaxima = window.document.getElementById('VelocidadeMaxima')
+            
+            var velocidade = window.document.getElementById('Radar').value
+            var velMax = 60
+            var velMenosMax = velocidade - 60;
+
+            velocidadeAtual.innerHTML = `Sua velocidade é de: ${velocidade}km/h <br>` ;
+            velocidadeMaxima.innerHTML = `A velocidade máxima permitida é de: ${velMax}km/h <br>`;
+
+            if (velocidade > velMax) {
+
+                multa.innerHTML = `Voce foi multado!`;
+
+                var paragrafoMulta = window.document.getElementById('Multa');
+                paragrafoMulta.style.backgroundColor = "red"
+                paragrafoMulta.style.color = "white"
+                paragrafoMulta.style.fontWeight = "200"
+
+            }else if(velocidade == velMax ){
+                
+                multa.innerHTML = `Atenção você passou no limite de volocidade !`;
+                multa.style.backgroundColor = "yellow"
+                
+            }else {
+                multa.innerHTML = ``;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 200px;
+}
+
+input {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 30px;
+    height: 20px;
+}
+
+.number {
+    margin-bottom: 0.5em;
+}
